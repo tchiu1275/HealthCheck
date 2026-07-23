@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "HealthCheckServer: build",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/HealthCheckServer/HealthCheckServer.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "HealthCheckClient: install",
+            "type": "npm",
+            "script": "install",
+            "path": "src/HealthCheckClient",
+            "problemMatcher": []
+        },
+        {
+            "label": "HealthCheckClient: serve",
+            "type": "shell",
+            "command": "npm",
+            "args": [
+                "start",
+                "--",
+                "--open"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/src/HealthCheckClient"
+            },
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "typescript",
+                "pattern": {
+                    "regexp": "."
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "Local:\\s+http"
+                }
+            }
+        },
+        {
+            "label": "HealthCheckServer: run",
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/src/HealthCheckServer/HealthCheckServer.csproj"
+            ],
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "dotnet",
+                "pattern": {
+                    "regexp": "."
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "Application started"
+                }
+            }
+        },
+        {
+            "label": "run: full stack",
+            "dependsOrder": "parallel",
+            "dependsOn": ["HealthCheckServer: run", "HealthCheckClient: serve"]
+        },
+        {
+            "label": "HealthCheckServer: build + client serve",
+            "dependsOrder": "parallel",
+            "dependsOn": ["HealthCheckServer: build", "HealthCheckClient: serve"]
+        }
+    ]
+}

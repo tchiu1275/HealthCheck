@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "name": "HealthCheckServer: launch",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "HealthCheckServer: build + client serve",
+            "program": "${workspaceFolder}/src/HealthCheckServer/bin/Debug/net10.0/HealthCheckServer.dll",
+            "cwd": "${workspaceFolder}/src/HealthCheckServer",
+            "stopAtEntry": false
+        }
+    ]
+}
