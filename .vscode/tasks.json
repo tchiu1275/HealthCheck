@@ -25,9 +25,7 @@
             "type": "shell",
             "command": "npm",
             "args": [
-                "start",
-                "--",
-                "--open"
+                "start"
             ],
             "options": {
                 "cwd": "${workspaceFolder}/src/HealthCheckClient"
@@ -44,6 +42,15 @@
                     "endsPattern": "Local:\\s+http"
                 }
             }
+        },
+        {
+            "label": "HealthCheckClient: open browser",
+            "type": "shell",
+            "command": "cmd",
+            "args": ["/c", "start", "http://localhost:4200"],
+            "dependsOrder": "parallel",
+            "dependsOn": ["HealthCheckClient: serve", "HealthCheckServer: run"],
+            "problemMatcher": []
         },
         {
             "label": "HealthCheckServer: run",
@@ -70,7 +77,7 @@
         {
             "label": "run: full stack",
             "dependsOrder": "parallel",
-            "dependsOn": ["HealthCheckServer: run", "HealthCheckClient: serve"]
+            "dependsOn": ["HealthCheckServer: run", "HealthCheckClient: open browser"]
         },
         {
             "label": "HealthCheckServer: build + client serve",

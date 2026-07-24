@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "DQK+3N1EcK4=",
+  "dgSpecHash": "D7O2lZl3kpM=",
   "success": true,
-  "projectFilePath": "/Users/tommychiu/Programming/Angular/HealthCheck/src/HealthCheckServer/HealthCheckServer.csproj",
+  "projectFilePath": "C:\\Users\\tommy.chiu\\source\\tchiu\\Angular\\HealthCheck\\src\\HealthCheckServer\\HealthCheckServer.csproj",
   "expectedPackageFiles": [
-    "/Users/tommychiu/.nuget/packages/microsoft.aspnetcore.openapi/10.0.10/microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
-    "/Users/tommychiu/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\tommy.chiu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
+    "C:\\Users\\tommy.chiu\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "/Users/tommychiu/Programming/Angular/HealthCheck/src/HealthCheckServer/HealthCheckServer.csproj",
+      "projectPath": "C:\\Users\\tommy.chiu\\source\\tchiu\\Angular\\HealthCheck\\src\\HealthCheckServer\\HealthCheckServer.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/tommychiu/Programming/Angular/HealthCheck/src/HealthCheckServer/HealthCheckServer.csproj",
+      "filePath": "C:\\Users\\tommy.chiu\\source\\tchiu\\Angular\\HealthCheck\\src\\HealthCheckServer\\HealthCheckServer.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"

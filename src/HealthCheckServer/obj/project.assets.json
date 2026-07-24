@@ -83,25 +83,41 @@
     ]
   },
   "packageFolders": {
-    "/Users/tommychiu/.nuget/packages/": {}
+    "C:\\Users\\tommy.chiu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tommychiu/Programming/Angular/HealthCheck/src/HealthCheckServer/HealthCheckServer.csproj",
+      "projectUniqueName": "C:\\Users\\tommy.chiu\\source\\tchiu\\Angular\\HealthCheck\\src\\HealthCheckServer\\HealthCheckServer.csproj",
       "projectName": "HealthCheckServer",
-      "projectPath": "/Users/tommychiu/Programming/Angular/HealthCheck/src/HealthCheckServer/HealthCheckServer.csproj",
-      "packagesPath": "/Users/tommychiu/.nuget/packages/",
-      "outputPath": "/Users/tommychiu/Programming/Angular/HealthCheck/src/HealthCheckServer/obj/",
+      "projectPath": "C:\\Users\\tommy.chiu\\source\\tchiu\\Angular\\HealthCheck\\src\\HealthCheckServer\\HealthCheckServer.csproj",
+      "packagesPath": "C:\\Users\\tommy.chiu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tommy.chiu\\source\\tchiu\\Angular\\HealthCheck\\src\\HealthCheckServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/tommychiu/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\tommy.chiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\microsoft.identity.web": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\microsoft.identity.web.microsoftgraph\\1.19.0": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\sl.los.eo.api.client\\0.4.221114.52186": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\sl.los.eoe.eventcallbacks\\0.1.210505.30275": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\sl.platform.messaging.abstractions\\0.1.210518.30868": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\sl.platform.messaging.masstransit\\0.1.210518.30868": {},
+        "C:\\Users\\tommy.chiu\\.nuget\\packages\\sl.platform.messaging\\0.1.220106.43669-sprint.20": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/supremelending/_packaging/internal/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
@@ -151,7 +167,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.302/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
